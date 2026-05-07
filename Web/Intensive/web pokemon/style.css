@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    'Courier New', Courier, monospace; /* Font chữ mang phong cách retro */
+}
+
+body {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container chính của Pokedex (thiết bị) - sắp xếp 3 phần: trái, giữa, phải */
+.pokedex-container {
+  display: flex;
+  background-color: #dc0a2d;
+  border-radius: 15px;
+  border: 3px solid #222;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  height: 500px;
+}
+
+/* Phần trái của Pokedex - chứa đèn và màn hình hiển thị ảnh Pokemon */
+.pokedex-left {
+  flex: 1;
+  padding: 20px;
+  border-right: 2px solid #8b0000;
+}
+
+/* Vùng đèn báo - sắp xếp 4 đèn theo hàng ngang (1 xanh lớn + 3 nhỏ) */
+.lights {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Kiểu cơ bản cho đèn - hình tròn với viền và bóng */
+.light {
+  border-radius: 50%; 
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Đèn xanh lớn (đèn chính) */
+.big-blue {
+  width: 50px;
+  height: 50px;
+  background-color: #28aafa;
+  border: 4px solid #fff;
+}
+
+/* Các đèn nhỏ */
+.small {
+  width: 15px;
+  height: 15px;
+}
+
+/* Đèn đỏ */
+.red {
+  background-color: #ff0000;
+}
+
+/* Đèn vàng */
+.yellow {
+  background-color: #ffcb05;
+}
+
+/* Đèn xanh */
+.green {
+  background-color: #4dad5b;
+}
+
+/* Container màn hình - vùng chứa các phần của màn hình */
+.screen-container {
+  background-color: #dedede;
+  padding: 20px;
+  border-radius: 10px 10px 10px 40px;
+  border: 2px solid #222;
+}
+
+/* Màn hình chính - hiển thị ảnh Pokemon (nền xanh như Game Boy) */
+.main-screen {
+  background-color: #98cb98; /* Màu xanh màn hình gameboy */
+  height: 250px;
+  border-radius: 5px;
+  border: 2px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Ảnh Pokemon trên màn hình */
+.main-screen img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Bản lề - phân chia giữa phần trái và phần phải của Pokedex */
+.hinge {
+  width: 40px;
+  background: linear-gradient(to right, #8b0000 0%, #dc0a2d 50%, #8b0000 100%);
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+/* Phần phải của Pokedex - chứa ô tìm kiếm và thông tin Pokemon */
+.pokedex-right {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Vùng tìm kiếm - ô nhập tên/ID Pokemon */
+.search-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Text hướng dẫn trong vùng tìm kiếm */
+.search-section p {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Ô nhập liệu tìm kiếm - giao diện giống terminal */
+#search-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #222;
+  background-color: #222;
+  color: #00ff00; /* Chữ màu xanh lá giống terminal */
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+}
+
+/* Màn hình thông tin - hiển thị dữ liệu chi tiết về Pokemon */
+.info-screen {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #555;
+  flex-grow: 1;
+}
+
+/* Dòng thông tin - sắp xếp 2 khối thông tin theo hàng ngang */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Tiêu đề khối thông tin (NAME, TYPE, v.v.) */
+.info-block h4 {
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-right: 25px;
+  letter-spacing: 1px;
+}
+
+/* Giá trị thông tin (Pikachu, Electric, v.v.) */
+.info-block p {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* Khối tiểu sử - phần mô tả về Pokemon */
+.bio-block {
+  margin-top: 20px;
+}
+
+/* Text tiểu sử - mô tả chi tiết */
+.bio-block p {
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: none;
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Điểm Học Tập</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h1>Quản Lý Điểm Học Tập</h1>
+        <p class="subtitle">Phân tích dữ liệu điểm TBHK của học sinh</p>
+      </div>
+
+      <div class="menu">
+        <button class="btn" onclick="bai1()">
+          <i class="fas fa-trophy"></i>
+          <span>Top 3 Điểm Cao Nhất</span>
+        </button>
+        <button class="btn" onclick="bai2()">
+          <i class="fas fa-arrow-down"></i>
+          <span>Điểm Thấp Nhất</span>
+        </button>
+        <button class="btn" onclick="bai3()">
+          <i class="fas fa-calculator"></i>
+          <span>Điểm TB Cả Lớp</span>
+        </button>
+        <button class="btn" onclick="bai4()">
+          <i class="fas fa-medal"></i>
+          <span>Danh Hiệu Học Lực</span>
+        </button>
+        <button class="btn" onclick="bai5()">
+          <i class="fas fa-star"></i>
+          <span>Điểm >= 7</span>
+        </button>
+      </div>
+
+      <div class="ket-qua">
+        <div class="result-header">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Kết Quả</h3>
+        </div>
+        <div id="hien-thi" class="result-content">
+          Hãy chọn một mục ở trên để xem kết quả!
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

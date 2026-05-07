@@ -1,0 +1,6 @@
+Chức năng của Sample Project: 
+- Trình chiếu đầu buổi học.
+- Giới thiệu cho HV về dự án đã được hoàn thiện.
+- Đặt mục tiêu cho HV tự hoàn thiện sản phẩm như Sample Project.
+
+Ghi chú: GV hướng dẫn HV thực hiện dự án  theo Teaching Guide, không thực hiện theo Sample Project.

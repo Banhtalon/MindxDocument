@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke Wiki</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- ====== PHẦN BODY - Nội dung chính ====== -->
+  <body>
+    <!-- CONTAINER CHÍNH: Chứa toàn bộ Pokedex (Thiết bị Pokemon) -->
+    <div class="pokedex-container">
+      <!-- ====== PHẦN TRÁI: Màn hình chính của Pokedex ====== -->
+      <div class="pokedex-left">
+        <!-- Phần đèn báo: 1 đèn lớn xanh + 3 đèn nhỏ (đỏ, vàng, xanh) -->
+        <div class="lights">
+          <!-- Đèn xanh lớn (đèn chính) -->
+          <div class="light big-blue"></div>
+          <!-- Đèn nhỏ màu đỏ -->
+          <div class="light small red"></div>
+          <!-- Đèn nhỏ màu vàng -->
+          <div class="light small yellow"></div>
+          <!-- Đèn nhỏ màu xanh -->
+          <div class="light small green"></div>
+        </div>
+
+        <!-- Phần màn hình chính hiển thị hình ảnh Pokemon -->
+        <div class="screen-container">
+          <!-- Hiển thị ảnh Pokemon từ API -->
+          <div class="main-screen">
+            <!-- ID "pokemon-image" để JavaScript cập nhật ảnh khi tìm kiếm -->
+            <img
+              id="pokemon-image"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+              alt="Pokemon"
+            />
+          </div>
+
+          <!-- Chi tiết trên màn hình (đèn đỏ + menu lines) -->
+          <div class="screen-details">
+            <!-- Chấm đỏ nhỏ -->
+            <div class="red-dot"></div>
+            <!-- 3 đường ngang (hamburger menu icon) -->
+            <div class="burger-lines">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bản lề: Phân chia giữa phần trái và phần phải -->
+      <div class="hinge"></div>
+
+      <!-- ====== PHẦN PHẢI: Phần tìm kiếm và thông tin Pokemon ====== -->
+      <div class="pokedex-right">
+        <!-- Phần tìm kiếm Pokemon -->
+        <div class="search-section">
+          <!-- Hướng dẫn nhập liệu -->
+          <p>Press enter to get the result</p>
+          <!-- Ô nhập tên/ID Pokemon để tìm kiếm -->
+          <input
+            type="text"
+            id="search-input"
+            placeholder="pikachu"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Màn hình hiển thị thông tin chi tiết về Pokemon -->
+        <div class="info-screen">
+          <!-- Dòng thông tin 1: Tên và Loại Pokemon -->
+          <div class="info-row">
+            <!-- Khối thông tin Tên (Name) -->
+            <div class="info-block">
+              <h4>NAME</h4>
+              <p id="pokemon-name">Pikachu</p>
+            </div>
+            <!-- Khối thông tin Loại (Type) -->
+            <div class="info-block">
+              <h4>TYPE</h4>
+              <p id="pokemon-type">Electric</p>
+            </div>
+          </div>
+
+          <!-- Dòng thông tin 2: Chiều cao và Cân nặng -->
+          <div class="info-row">
+            <!-- Khối thông tin Chiều cao (Height) -->
+            <div class="info-block">
+              <h4>HEIGHT</h4>
+              <p id="pokemon-height">0.4m</p>
+            </div>
+            <!-- Khối thông tin Cân nặng (Weight) -->
+            <div class="info-block">
+              <h4>WEIGHT</h4>
+              <p id="pokemon-weight">6kg</p>
+            </div>
+          </div>
+
+          <!-- Phần tiểu sử (Bio) - Mô tả về Pokemon -->
+          <div class="info-block bio-block">
+            <h4>BIO</h4>
+            <p id="pokemon-bio">
+              When several of these POKéMON gather, their electricity could
+              build and cause lightning storms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Div trống (dành cho mục đích khác hoặc chứng thực layout) -->
+    <div></div>
+
+    <!-- Liên kết file JavaScript để xử lý chức năng tìm kiếm và cập nhật dữ liệu -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

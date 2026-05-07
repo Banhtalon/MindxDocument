@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #7fa1c3;
+  --color-danger: #c80036;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #5c5c5c;
+  --color-light-grey: #dcdcdc;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-cancle {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.rounded-sm {
+  border-radius: 4px;
+}
+
+.rounded-md {
+  border-radius: 8px;
+}
+
+.shadow-md {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
