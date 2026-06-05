@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "title": "Mononoke Hime",
+    "release_date": "Jul 1997",
+    "image": "ui/images/mononoke-hime.jpg",
+    "rating": 0,
+    "link": "None"
+  },
+  {
+    "id": 1,
+    "title": "Sousou no Frieren",
+    "release_date": "Sep 2023",
+    "image": "ui/images/frieren.jpg",
+    "rating": 0,
+    "link": "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end"
+  },
+  {
+    "id": 2,
+    "title": "Neon Genesis Evangelion",
+    "release_date": "Oct 1995",
+    "image": "ui/images/neon-genesis-evangelion.jpg",
+    "rating": 0,
+    "link": "https://www.crunchyroll.com/series/GR75H498R/neon-genesis-evangelion"
+  },
+  {
+    "title": "aaa",
+    "release_date": "Jan 2004",
+    "image": "Browse",
+    "rating": 4.0,
+    "link": "aa",
+    "id": 3
+  },
+  {
+    "title": "cccc",
+    "release_date": "Jan 2000",
+    "image": "Browse",
+    "rating": 5.0,
+    "link": "aaaa",
+    "id": 4
+  },
+  {
+    "title": "333",
+    "release_date": "Jan 2000",
+    "image": "Browse",
+    "rating": 3.0,
+    "link": "3",
+    "id": 5
+  }
+]
